@@ -1,0 +1,8 @@
+<table class="table table-hover">
+    <tr *ngFor="let op of service.list" [ngClass]="(op.type == 1)?'debit':'credit'">
+        <td>{{op.description}}</td>
+        <td>{{op.amount}}</td>
+        <td>{{op.totalAmount}}</td>
+        <td>{{op.date}}</td>
+    </tr>
+</table>
